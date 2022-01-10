@@ -22,7 +22,7 @@ export default {
           h(
             'div',
             {
-              class: 'vc-title',
+              class: 'vc-title my-regular my-simple-btn',
               on: this.navPopoverEvents,
             },
             [this.safeScopedSlot('header-title', this.page, this.page.title)],
