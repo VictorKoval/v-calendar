@@ -35,7 +35,8 @@
     "build:lib_css": "rimraf lib && cross-env NODE_ENV=production SEP_CSS=true rollup --config rollup.config.js",
     "deploy:docs": "vuepress build docs && netlify deploy",
     "lint": "vue-cli-service lint",
-    "test": "vue-cli-service test:unit --watch"
+    "test": "vue-cli-service test:unit --watch",
+    "prepare": "npm run build"
   },
   "files": [
     "src",
